@@ -69,7 +69,7 @@ async function findDecisionMakersEmail(personIds) {
         payload,
         {
           headers: {
-            "X-KEY": process.env.PROSPEO_API_KEY,
+            "X-KEY": process.env.PROSPEO_API_KEY_V2,
             "Content-Type": "application/json",
           },
         },
@@ -107,7 +107,7 @@ async function findDecisionMakersEmail(personIds) {
   }
 
   console.log("\n----------------------------------------");
-  console.log("Completed email enrichment for all person IDs.");
+  console.log(`Completed email enrichment for all ${personIds.length} person IDs.`);
   console.log("----------------------------------------\n\n");
   return allEnrichedData;
 }

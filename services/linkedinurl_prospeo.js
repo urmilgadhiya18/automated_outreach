@@ -88,7 +88,7 @@ async function findDecisionMakersLinkedin(domainNames) {
       },
       {
         headers: {
-          "X-KEY": process.env.PROSPEO_API_KEY,
+          "X-KEY": process.env.PROSPEO_API_KEY_V2,
           "Content-Type": "application/json",
         },
       },
